@@ -1,0 +1,24 @@
+use pnpm
+diagnose issues correctly #[derive(Accounts)]
+pub struct StakeReserve<'info> {
+  #[account(mut)]
+  pub state: AccountInfo<'info>,
+  #[account(mut)]
+  pub validator_list: AccountInfo<'info>,
+  #[account(mut)]
+  pub stake_list: AccountInfo<'info>,
+  #[account(mut)]
+  pub validator_vote: AccountInfo<'info>,
+  #[account(mut)]
+  pub reserve_pda: AccountInfo<'info>,
+  #[account(mut)]
+  pub stake_account: AccountInfo<'info>,
+  pub stake_deposit_authority: AccountInfo<'info>,
+  pub clock: AccountInfo<'info>,
+  pub epoch_schedule: AccountInfo<'info>,
+  pub rent: AccountInfo<'info>,
+  pub stake_history: AccountInfo<'info>,
+  pub stake_config: AccountInfo<'info>,
+  pub system_program: AccountInfo<'info>,
+  pub stake_program: AccountInfo<'info>,
+}

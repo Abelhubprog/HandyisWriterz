@@ -1,0 +1,62 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import './styles/animations.css';
+
+@layer base {
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900 min-h-screen;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-brand-600 text-white hover:bg-brand-700 disabled:bg-brand-300;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-700 hover:bg-gray-200 disabled:bg-gray-50;
+  }
+
+  .input {
+    @apply block w-full rounded-lg border-gray-300 shadow-sm focus:border-brand-500 focus:ring-brand-500;
+  }
+
+  .label {
+    @apply block text-sm font-medium text-gray-700;
+  }
+}
+
+/* Custom utility classes */
+@layer utilities {
+  .link {
+    @apply text-brand-600 hover:text-brand-700 hover:underline;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200;
+  }
+
+  .animate-smooth {
+    @apply transition-all duration-200 ease-in-out;
+  }
+}

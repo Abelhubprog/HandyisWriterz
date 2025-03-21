@@ -1,0 +1,32 @@
+[
+  {
+    "id": "admin-profile",
+    "user_id": "admin-user",
+    "full_name": "HandyWriterz Admin",
+    "avatar_url": "https://ui-avatars.com/api/?name=HandyWriterz+Admin",
+    "website": "https://handywriterz.com",
+    "bio": "Administrator of HandyWriterz platform",
+    "created_at": "2025-02-26T21:31:21.509Z",
+    "updated_at": "2025-02-26T21:31:21.509Z"
+  },
+  {
+    "id": "expert-profile",
+    "user_id": "expert-user",
+    "full_name": "HandyWriterz Expert",
+    "avatar_url": "https://ui-avatars.com/api/?name=HandyWriterz+Expert",
+    "website": null,
+    "bio": "Content expert specializing in healthcare and education",
+    "created_at": "2025-02-26T21:31:21.509Z",
+    "updated_at": "2025-02-26T21:31:21.509Z"
+  },
+  {
+    "id": "researcher-profile",
+    "user_id": "researcher-user",
+    "full_name": "HandyWriterz Researcher",
+    "avatar_url": "https://ui-avatars.com/api/?name=HandyWriterz+Researcher",
+    "website": null,
+    "bio": "Research specialist with focus on case studies and analysis",
+    "created_at": "2025-02-26T21:31:21.509Z",
+    "updated_at": "2025-02-26T21:31:21.509Z"
+  }
+]

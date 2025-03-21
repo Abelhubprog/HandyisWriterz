@@ -1,0 +1,17 @@
+# Node modules
+node_modules
+
+# Canvas-related files (to prevent build issues)
+**/node_modules/canvas
+**/node_modules/**/canvas
+**/node_modules/*canvas*
+**/node_modules/**/*canvas*
+
+# Logs and temporary files
+*.log
+.DS_Store
+
+# Test directories
+__tests__
+test
+tests 

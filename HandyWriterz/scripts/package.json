@@ -1,0 +1,13 @@
+{
+  "name": "handywriterz-admin-scripts",
+  "version": "1.0.0",
+  "description": "Admin scripts for HandyWriterz",
+  "main": "add-admin.js",
+  "scripts": {
+    "add-admin": "node add-admin.js",
+    "add-admin-sql": "node add-admin-sql.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.7"
+  }
+} 
