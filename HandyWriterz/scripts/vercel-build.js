@@ -1,6 +1,6 @@
-const { execSync } = require('child_process');
-const fs = require('fs');
-const path = require('path');
+import { execSync } from 'child_process';
+import { fs } from 'fs';
+import { path } from 'path';
 
 // Function to execute commands with error handling
 function runCommand(command, errorMessage) {
@@ -139,4 +139,12 @@ try {
   console.error('Error creating _headers file:', error);
 }
 
-console.log('Build completed successfully!'); 
+console.log('Build completed successfully!');
+
+try {
+  // Run the build command
+  execSync('npm run build', { stdio: 'inherit' });
+} catch (error) {
+  console.error('Build failed:', error);
+  process.exit(1);
+} 

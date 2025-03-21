@@ -1,11 +1,7 @@
 {
-  "buildCommand": "node scripts/vercel-build.js",
-  "installCommand": "npm install --omit=optional --ignore-scripts",
+  "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "env": {
-    "SKIP_INSTALL_CANVAS": "true",
-    "NODE_OPTIONS": "--max-old-space-size=4096"
-  },
+  "framework": "vite",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
