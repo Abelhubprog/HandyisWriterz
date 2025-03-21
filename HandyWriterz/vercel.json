@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "buildCommand": "cd HandyWriterz && npm install && npm run build",
-  "outputDirectory": "HandyWriterz/dist",
-  "installCommand": "cd HandyWriterz && npm install",
+  "buildCommand": "cd HandyisWriterz/HandyWriterz && npm install && npm run build",
+  "outputDirectory": "HandyisWriterz/HandyWriterz/dist",
+  "installCommand": "cd HandyisWriterz/HandyWriterz && npm install",
   "framework": "vite",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
